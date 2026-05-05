@@ -1,0 +1,15 @@
+{
+	"name": "databricks-course-02",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "35fd1323-e104-402e-be4d-b49d37ed5c15",
+		"tenantId": "1be86979-b295-4d75-8ddf-0fd0d30c71d7"
+	}
+}
