@@ -1,0 +1,31 @@
+{
+	"name": "dataset_movie_bronze",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_movie_history_adls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "genreId",
+				"type": "String"
+			},
+			{
+				"name": "genreName",
+				"type": "String"
+			}
+		]
+	}
+}
