@@ -1,0 +1,17 @@
+{
+	"name": "tg_proccess_movie",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2026-05-09T15:28:00",
+				"timeZone": "Central Standard Time (Mexico)"
+			}
+		}
+	}
+}
