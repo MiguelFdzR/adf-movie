@@ -2,7 +2,7 @@
 	"name": "tg_proccess_movie_history",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
@@ -21,6 +21,7 @@
 				"frequency": "Day",
 				"interval": 1,
 				"startTime": "2026-05-04T23:38:00Z",
+				"endTime": "2026-05-09T20:25:52Z",
 				"timeZone": "UTC"
 			}
 		}
