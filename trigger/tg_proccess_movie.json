@@ -9,8 +9,8 @@
 			"recurrence": {
 				"frequency": "Day",
 				"interval": 1,
-				"startTime": "2026-05-08T15:28:00",
-				"timeZone": "Central Standard Time (Mexico)"
+				"startTime": "2026-05-08T15:28:00Z",
+				"timeZone": "UTC"
 			}
 		}
 	}
