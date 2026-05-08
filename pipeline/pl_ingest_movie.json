@@ -69,7 +69,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/test_8906@hotmail.com/utils/02. mail-error"
+								"notebookPath": "/Users/rosa_control1@outlook.com/databricks-movie/ingestion/00. ingestion_all"
 							},
 							"linkedServiceName": {
 								"referenceName": "AzureDatabricks1",
@@ -91,7 +91,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/test_8906@hotmail.com/ingestion/00. ingestion_all",
+								"notebookPath": "/Users/rosa_control1@outlook.com/codigos/test connetion",
 								"baseParameters": {
 									"p_file_date": {
 										"value": "@formatDateTime(pipeline().parameters.p_file_date,'yyyy-MM-dd')",
