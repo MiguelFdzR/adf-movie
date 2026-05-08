@@ -19,7 +19,7 @@
 					"value": "@dataset().p_ds_file_name",
 					"type": "Expression"
 				},
-				"fileSystem": "bronze"
+				"fileSystem": "bronzes"
 			}
 		},
 		"schema": {
