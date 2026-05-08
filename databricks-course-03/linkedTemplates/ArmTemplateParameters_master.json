@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "databricks-course-03"
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"ls_movie_history_adls_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0505-221435-eolru55u"
+		},
+		"ls_movie_history_adls_properties_typeProperties_url": {
+			"value": "https://moviehistory05.dfs.core.windows.net/"
+		},
+		"tg_proccess_movie_properties_pl_process_movie_parameters_p_enviroment": {
+			"value": "producction"
+		},
+		"tg_proccess_movie_properties_pl_process_movie_parameters_p_file_date": {
+			"value": "2024-12-27"
+		},
+		"tg_proccess_movie_history_properties_pl_process_movie_parameters_p_enviroment": {
+			"value": "production"
+		},
+		"tg_proccess_movie_history_properties_pl_process_movie_parameters_p_file_date": {
+			"value": "2024-12-30"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
