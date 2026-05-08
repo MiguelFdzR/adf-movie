@@ -68,7 +68,8 @@
 				"defaultValue": "Production"
 			},
 			"p_file_date": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "2024-12-30"
 			}
 		},
 		"annotations": [],
