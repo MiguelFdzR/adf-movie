@@ -20,9 +20,9 @@
 			"recurrence": {
 				"frequency": "Day",
 				"interval": 1,
-				"startTime": "2026-05-04T23:38:00Z",
-				"endTime": "2026-05-09T20:25:52Z",
-				"timeZone": "UTC"
+				"startTime": "2026-05-04T23:38:00",
+				"endTime": "2026-05-30T14:29:52",
+				"timeZone": "Central Standard Time (Mexico)"
 			}
 		}
 	}
