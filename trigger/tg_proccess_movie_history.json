@@ -2,11 +2,11 @@
 	"name": "tg_proccess_movie_history",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "pl_process_movie",
+					"referenceName": "pl_master_process_movie",
 					"type": "PipelineReference"
 				},
 				"parameters": {
