@@ -1,5 +1,5 @@
 {
-	"name": "pl_process_movie",
+	"name": "pl_master_process_movie",
 	"properties": {
 		"activities": [
 			{
