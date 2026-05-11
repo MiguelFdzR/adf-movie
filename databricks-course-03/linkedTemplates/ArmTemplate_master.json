@@ -23,19 +23,19 @@
 			"type": "string",
 			"defaultValue": "https://moviehistory05.dfs.core.windows.net/"
 		},
-		"tg_proccess_movie_properties_pl_process_movie_parameters_p_enviroment": {
+		"tg_proccess_movie_properties_pl_master_process_movie_parameters_p_enviroment": {
 			"type": "string",
 			"defaultValue": "producction"
 		},
-		"tg_proccess_movie_properties_pl_process_movie_parameters_p_file_date": {
+		"tg_proccess_movie_properties_pl_master_process_movie_parameters_p_file_date": {
 			"type": "string",
 			"defaultValue": "2024-12-27"
 		},
-		"tg_proccess_movie_history_properties_pl_process_movie_parameters_p_enviroment": {
+		"tg_proccess_movie_history_properties_pl_master_process_movie_parameters_p_enviroment": {
 			"type": "string",
 			"defaultValue": "production"
 		},
-		"tg_proccess_movie_history_properties_pl_process_movie_parameters_p_file_date": {
+		"tg_proccess_movie_history_properties_pl_master_process_movie_parameters_p_file_date": {
 			"type": "string",
 			"defaultValue": "2024-12-30"
 		},
@@ -78,17 +78,17 @@
 					"ls_movie_history_adls_properties_typeProperties_url": {
 						"value": "[parameters('ls_movie_history_adls_properties_typeProperties_url')]"
 					},
-					"tg_proccess_movie_properties_pl_process_movie_parameters_p_enviroment": {
-						"value": "[parameters('tg_proccess_movie_properties_pl_process_movie_parameters_p_enviroment')]"
+					"tg_proccess_movie_properties_pl_master_process_movie_parameters_p_enviroment": {
+						"value": "[parameters('tg_proccess_movie_properties_pl_master_process_movie_parameters_p_enviroment')]"
 					},
-					"tg_proccess_movie_properties_pl_process_movie_parameters_p_file_date": {
-						"value": "[parameters('tg_proccess_movie_properties_pl_process_movie_parameters_p_file_date')]"
+					"tg_proccess_movie_properties_pl_master_process_movie_parameters_p_file_date": {
+						"value": "[parameters('tg_proccess_movie_properties_pl_master_process_movie_parameters_p_file_date')]"
 					},
-					"tg_proccess_movie_history_properties_pl_process_movie_parameters_p_enviroment": {
-						"value": "[parameters('tg_proccess_movie_history_properties_pl_process_movie_parameters_p_enviroment')]"
+					"tg_proccess_movie_history_properties_pl_master_process_movie_parameters_p_enviroment": {
+						"value": "[parameters('tg_proccess_movie_history_properties_pl_master_process_movie_parameters_p_enviroment')]"
 					},
-					"tg_proccess_movie_history_properties_pl_process_movie_parameters_p_file_date": {
-						"value": "[parameters('tg_proccess_movie_history_properties_pl_process_movie_parameters_p_file_date')]"
+					"tg_proccess_movie_history_properties_pl_master_process_movie_parameters_p_file_date": {
+						"value": "[parameters('tg_proccess_movie_history_properties_pl_master_process_movie_parameters_p_file_date')]"
 					}
 				}
 			},

@@ -23,19 +23,19 @@
 			"type": "string",
 			"defaultValue": "https://moviehistory05.dfs.core.windows.net/"
 		},
-		"tg_proccess_movie_properties_pl_process_movie_parameters_p_enviroment": {
+		"tg_proccess_movie_properties_pl_master_process_movie_parameters_p_enviroment": {
 			"type": "string",
 			"defaultValue": "producction"
 		},
-		"tg_proccess_movie_properties_pl_process_movie_parameters_p_file_date": {
+		"tg_proccess_movie_properties_pl_master_process_movie_parameters_p_file_date": {
 			"type": "string",
 			"defaultValue": "2024-12-27"
 		},
-		"tg_proccess_movie_history_properties_pl_process_movie_parameters_p_enviroment": {
+		"tg_proccess_movie_history_properties_pl_master_process_movie_parameters_p_enviroment": {
 			"type": "string",
 			"defaultValue": "production"
 		},
-		"tg_proccess_movie_history_properties_pl_process_movie_parameters_p_file_date": {
+		"tg_proccess_movie_history_properties_pl_master_process_movie_parameters_p_file_date": {
 			"type": "string",
 			"defaultValue": "2024-12-30"
 		}
@@ -433,7 +433,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/pl_process_movie')]",
+			"name": "[concat(parameters('factoryName'), '/pl_master_process_movie')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -525,16 +525,16 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Started",
+				"runtimeState": "Stopped",
 				"pipelines": [
 					{
 						"pipelineReference": {
-							"referenceName": "pl_process_movie",
+							"referenceName": "pl_master_process_movie",
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"p_enviroment": "[parameters('tg_proccess_movie_properties_pl_process_movie_parameters_p_enviroment')]",
-							"p_file_date": "[parameters('tg_proccess_movie_properties_pl_process_movie_parameters_p_file_date')]"
+							"p_enviroment": "[parameters('tg_proccess_movie_properties_pl_master_process_movie_parameters_p_enviroment')]",
+							"p_file_date": "[parameters('tg_proccess_movie_properties_pl_master_process_movie_parameters_p_file_date')]"
 						}
 					}
 				],
@@ -544,12 +544,13 @@
 						"frequency": "Day",
 						"interval": 1,
 						"startTime": "2026-05-08T21:33:00Z",
-						"timeZone": "UTC"
+						"timeZone": "UTC",
+						"schedule": {}
 					}
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/pl_process_movie')]"
+				"[concat(variables('factoryId'), '/pipelines/pl_master_process_movie')]"
 			]
 		},
 		{
@@ -558,16 +559,16 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Started",
+				"runtimeState": "Stopped",
 				"pipelines": [
 					{
 						"pipelineReference": {
-							"referenceName": "pl_process_movie",
+							"referenceName": "pl_master_process_movie",
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"p_enviroment": "[parameters('tg_proccess_movie_history_properties_pl_process_movie_parameters_p_enviroment')]",
-							"p_file_date": "[parameters('tg_proccess_movie_history_properties_pl_process_movie_parameters_p_file_date')]"
+							"p_enviroment": "[parameters('tg_proccess_movie_history_properties_pl_master_process_movie_parameters_p_enviroment')]",
+							"p_file_date": "[parameters('tg_proccess_movie_history_properties_pl_master_process_movie_parameters_p_file_date')]"
 						}
 					}
 				],
@@ -583,7 +584,7 @@
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/pl_process_movie')]"
+				"[concat(variables('factoryId'), '/pipelines/pl_master_process_movie')]"
 			]
 		}
 	]

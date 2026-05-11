@@ -17,16 +17,16 @@
 		"ls_movie_history_adls_properties_typeProperties_url": {
 			"value": "https://moviehistory05.dfs.core.windows.net/"
 		},
-		"tg_proccess_movie_properties_pl_process_movie_parameters_p_enviroment": {
+		"tg_proccess_movie_properties_pl_master_process_movie_parameters_p_enviroment": {
 			"value": "producction"
 		},
-		"tg_proccess_movie_properties_pl_process_movie_parameters_p_file_date": {
+		"tg_proccess_movie_properties_pl_master_process_movie_parameters_p_file_date": {
 			"value": "2024-12-27"
 		},
-		"tg_proccess_movie_history_properties_pl_process_movie_parameters_p_enviroment": {
+		"tg_proccess_movie_history_properties_pl_master_process_movie_parameters_p_enviroment": {
 			"value": "production"
 		},
-		"tg_proccess_movie_history_properties_pl_process_movie_parameters_p_file_date": {
+		"tg_proccess_movie_history_properties_pl_master_process_movie_parameters_p_file_date": {
 			"value": "2024-12-30"
 		}
 	}
